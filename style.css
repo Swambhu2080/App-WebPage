@@ -1,4 +1,7 @@
 *{ 
+	 /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;*/
 	margin:  0; 
 	padding: 0; 
 	box-sizing: border-box; 
@@ -17,9 +20,14 @@ a:hover{
 li{ 
 	list-style: none; 
 }
+
 html, body {
-    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
 .navbar-brand{
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -28,6 +36,9 @@ html, body {
 
 .name-part{
 	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .navbar-brand img{
@@ -35,10 +46,21 @@ html, body {
 }
 
 .name-part-logo{
+	margin: 20px 10px;
+}
+
+.name-part-logo img{
+	height: 150px;
+	width: 300px;
 }
 
 .name-part-heading {
-	}
+	margin: 20px 10px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
 
 .name-part-heading h3{
 	font-size: 2.0rem;
@@ -110,6 +132,20 @@ html, body {
 	border-radius: 25px;
 }
 
+.button-header{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.accordion-body h5{
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.accordion-body h6{
+	font-size: 1.2rem;
+}
+
 @media(max-width: 1024px ){
 	.name-part-heading {
 		margin-left:  80px;
@@ -117,6 +153,9 @@ html, body {
 }
 
 @media(max-width: 765px ){
+	.name-part{
+		flex-direction: column;
+	}
 	.name-part-heading {
 		margin-left:  0px;
 		display: flex;
